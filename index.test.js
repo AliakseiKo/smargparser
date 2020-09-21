@@ -1,6 +1,6 @@
 /* eslint-env jest */
 
-const { parse, parseKeyValue } = require('./index');
+const { parseKeyValue } = require('./index');
 
 test('must parse', () => {
   expect(parseKeyValue('--key=value')).toEqual({ key: 'key', value: 'value' });
@@ -8,4 +8,5 @@ test('must parse', () => {
   expect(parseKeyValue('--key')).toEqual({ key: 'key', value: true });
   expect(parseKeyValue('--=value')).toEqual({ key: '=value', value: true });
   expect(parseKeyValue('--=')).toEqual({ key: '=', value: true });
+  expect(parseKeyValue('--')).toEqual({ key: '', value: true });
 });
