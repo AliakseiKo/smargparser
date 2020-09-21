@@ -1,14 +1,34 @@
 {
   "name": "smargparser",
   "version": "1.0.0",
-  "description": "",
+  "description": "Pars arguments. Parse all JSON types. Yes, arrays and objects too.",
+  "keywords": [
+    "argv",
+    "args",
+    "flags",
+    "arguments",
+    "options",
+    "parser",
+    "minimist",
+    "optimist"
+  ],
+  "author": {
+    "name": "AliakseiKo",
+    "email": "AliakseiKo@gmail.com"
+  },
+  "license": "MIT",
+  "homepage": "#readme",
+  "bugs": {
+    "url": "/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+.git"
+  },
   "main": "index.js",
   "scripts": {
     "test": "jest"
   },
-  "keywords": [],
-  "author": "",
-  "license": "ISC",
   "dependencies": {
     "jest": "^26.4.2"
   }
