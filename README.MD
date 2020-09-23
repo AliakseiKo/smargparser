@@ -34,7 +34,8 @@ $ node example.js --foo 1 25 false --baz=qux
 { foo: [ 1, 25, false ], baz: 'qux', _: [], '--': [] }
 
 
-$ node example.js --port 3000 --userData '{ "name": "Vlad", "age": 23, "married": false, "pets": ["cement", "concrete"] }'
+$ node example.js --port 3000 --userData '{ "name": "Vlad",
+"age": 23, "married": false, "pets": ["cement", "concrete"] }'
 {
   port: 3000,
   userData: {

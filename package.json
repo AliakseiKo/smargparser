@@ -1,6 +1,6 @@
 {
   "name": "smargparser",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Pars arguments. Parse all JSON types. Yes, arrays and objects too.",
   "keywords": [
     "argv",
@@ -29,7 +29,8 @@
   "scripts": {
     "test": "jest"
   },
-  "dependencies": {
+  "dependencies": {},
+  "devDependencies": {
     "jest": "^26.4.2"
   }
 }

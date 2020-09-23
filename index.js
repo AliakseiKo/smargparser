@@ -24,7 +24,7 @@ function parseArgs(argv = process.argv.slice(2), negativeNumbers = true) {
     if (argv[i] === '--') {
       __ = argv.slice(i + 1);
       break;
-    } else if (argv[i].slice(0, 2) === '--') {
+    } else if (argv[i].startsWith('--')) {
       let { key, value } = parseKeyValue(argv[i++].slice(2));
 
       if (value === null) {
@@ -32,7 +32,7 @@ function parseArgs(argv = process.argv.slice(2), negativeNumbers = true) {
       }
 
       resultDict[key] = parseValue(value);
-    } else if (argv[i].charAt(0) === '-' && !(negativeNumbers && /^[+-]?\d+(?:\.\d+|e[+-]\d+)?/.test(argv[i]))) {
+    } else if (argv[i].startsWith('-') && !(negativeNumbers && /^[+-]?\d+(?:\.\d+|e[+-]\d+)?/.test(argv[i]))) {
 
       const keys = argv[i].slice(1).split('');
       let key, value;
